@@ -12,7 +12,7 @@ post '/' do
     response: {
       outputSpeech: {
         type: "PlainText",
-        text: morning_shift.todays_news
+        text: morning_shift.todays_news.to_s
       }
     }
   }.to_json
