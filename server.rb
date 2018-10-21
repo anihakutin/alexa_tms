@@ -1,5 +1,15 @@
 require 'sinatra'
+require 'json'
+
 
 post '/' do
-  p request.body.read
+  {
+    version: "1.0",
+    response: {
+      outputSpeech: {
+        type: "PlainText",
+        text: "hello world"
+      }
+    }
+  }.to_json
 end
