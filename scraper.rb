@@ -15,7 +15,7 @@ class Scraper
 
     todays_news = ""
 
-    todays_news += "Today's Morning Shift: #{article.css("h1.headline.hover-highlight.entry-title.js_entry-title").text} \n"
+    todays_news += "Today's Morning Shift: #{article_page.css("h1.headline.hover-highlight.entry-title.js_entry-title").text} \n"
 
     # binding.pry
     # New link =
