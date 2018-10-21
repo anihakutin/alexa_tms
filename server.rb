@@ -4,6 +4,7 @@ require 'json'
 
 morning_shift = Scraper.new
 
+article = morning_shift.scrape_morning_shift
 # binding.pry
 
 post '/' do
@@ -12,7 +13,7 @@ post '/' do
     response: {
       outputSpeech: {
         type: "PlainText",
-        text: morning_shift.todays_news.to_s
+        text: article
       }
     }
   }.to_json
