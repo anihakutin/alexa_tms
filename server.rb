@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
 
+morning_shift = Scraper.new
 
 post '/' do
   {
