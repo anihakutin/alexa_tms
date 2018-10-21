@@ -13,11 +13,20 @@ class Scraper
 
     article_page = Nokogiri::HTML(open(article_link))
 
-    binding.pry
+    todays_news = ""
+
+    todays_news += "Today's Morning Shift: #{article.css("h1.headline.hover-highlight.entry-title.js_entry-title").text} \n"
+
+    # binding.pry
     # New link =
     # doc.css("div.item__content.item__content--thumb").first
     # doc.css("div.item__content.item__content--thumb").first.css("a.js_link")[0]["href"]
 
     # Morning shift page
+    # article = article_page.css("div.main__content.js_main__content")
+    # article.title = article.css("h1.headline.hover-highlight.entry-title.js_entry-title").text
+    # article_p_title = article_page.css(".post__content-wrapper").css("p")[1] etc...
+    # article text = article_page.css(".post__content-wrapper").css("h2").each {|t| puts t.text}
+    todays_news
   end
 end
