@@ -1,7 +1,10 @@
+require_relative "./scraper.rb"
 require 'sinatra'
 require 'json'
 
 morning_shift = Scraper.new
+
+binding.pry
 
 post '/' do
   {
