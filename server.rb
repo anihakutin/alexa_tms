@@ -5,7 +5,6 @@ require 'json'
 morning_shift = Scraper.new
 
 article = morning_shift.scrape_morning_shift
-# binding.pry
 
 post '/' do
   {
