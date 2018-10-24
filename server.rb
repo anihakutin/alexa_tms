@@ -12,7 +12,7 @@ post '/' do
     response: {
       outputSpeech: {
         type: "PlainText",
-        text: article
+        text: article.first[:sub_title]
       }
     }
   }.to_json
