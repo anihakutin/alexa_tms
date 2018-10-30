@@ -1,8 +1,4 @@
-require 'nokogiri'
-require 'open-uri'
-require 'pry'
-
-class Scraper
+class AlexaTms::Scraper
   attr_accessor :todays_news
 
   def scrape_morning_shift

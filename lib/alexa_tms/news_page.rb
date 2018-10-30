@@ -1,0 +1,3 @@
+class AlexaTms::Newspage
+  
+end

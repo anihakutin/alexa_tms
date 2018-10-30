@@ -1,0 +1,3 @@
+class AlexaTms::Paragraph
+
+end
